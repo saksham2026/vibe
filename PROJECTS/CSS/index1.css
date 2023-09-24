@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100&family=Roboto+Mono:wght@300;400;600;700&display=swap');
+/* General CSS starts here. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:#e2f29d; */
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80");
+    display : flex ;
+    flex-direction: column ;
+    color : rgb(255, 255, 255) ;
+    width : 100vw ;
+    height : 100vh ;
+    justify-content: space-between;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color : rgb(255, 255, 255) ;
+}
+
+ul{
+    list-style: none;
+}
+/* General CSS ends here. */
+
+/* CSS for navbar starts here. */
+.navbar{
+    display : flex ;
+    align-items: center;
+    height : 70px ;
+    justify-content: space-between;
+    padding : 0 2% ;
+    /* border-bottom: 2px solid rgb(3, 176, 17); */
+}
+.navbar ul{
+    display : flex ;
+    gap : 2vw ;
+}
+.nav-logo img{
+    font-size: 30px ;
+    cursor : pointer ;
+    height : 50px; 
+    width : 50px;
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-search input{
+    padding : 20px ;
+    height : 35px ;
+    background-color: azure;
+    width : 260px ;
+    border-radius: 50px ;
+    border : transparent;
+    font-size: medium;
+
+}
+#searchButton{
+    padding : 5px ;
+    display : flex ;
+    align-items: center;
+    justify-content: center;
+    margin-left : 10px ;
+    border-radius: 5px ;
+    background-color: rgb(198, 51, 231);
+    color : white ;
+    border: none;
+    cursor: pointer;
+}
+#searchButton:hover{
+    background-color: rgb(197, 28, 231);
+}
+
+/* CSS for navbar ends here. */
+
+/* CSS for song container starts here. */
+.songs-container{
+    width : 100% ;
+    height: 70% ;
+    /* border : 1px solid white ; */
+    display : flex ;
+}
+.song-container-left{
+    display : flex ;
+    width : 50% ;
+    height : 100% ;
+    /* border-right: 5px solid white; */
+}
+.songs-container-menu{
+    width : 30% ;
+    height : 100% ;
+    /* border-right : 5px solid green ; */
+}
+.songs-container-menu ol{
+    list-style: none;
+    width : 100% ;
+    display: flex;
+    flex-direction: column;
+    gap : 20px ;
+    text-align: center;
+    padding : 30px ;
+    background-color: #1e1d1e;
+    opacity : 90% ;
+    height : 400px ;
+    overflow-y: scroll;
+}
+.songs-container-menu ol li a{
+    
+}
+.songs-container-menu ol li{
+    position: relative;
+    background-color: #1e1d1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color : rgb(255, 0, 0) ;
+    border : 1px solid black ;
+    border-radius: 10px ;
+    height : 40px ;
+    font-weight: 900;
+}
+.song-container-right{
+    display : flex ;
+    flex-direction: column;
+    width : 50% ;
+    height : 100% ;
+}
+.song-conatiner-right-head{
+    display : flex ;
+    height : 10% ;
+    justify-content: center;
+    /* border-bottom: 2px solid grey; */
+    align-items: center;
+}
+.song-conatiner-right-head h1{
+    font-family: 'Roboto Mono', monospace;
+}
+.song-container-list{
+    display : flex ;
+    flex-direction: column;
+    align-items: center;
+    width : 70% ;
+    /* overflow-y: scroll; */
+    padding : 5px ;
+    
+}
+.song-container-list h1{
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    background: transparent;
+    position: sticky;
+}
+.song-container-list ul{
+    margin-top : 50px ;
+    height: 100% ;
+    display : flex ;
+    flex-direction: column;
+    gap : 50px ;
+    align-items: center;
+    background-color: transparent;
+    padding : 20px ;
+    width : 70% ;
+ }
+.song-container-list ul li img{
+    height : 40px ;
+    width : 40px ; 
+    border-radius: 30px;
+}
+.song-container-list ul li{
+    height : 60px ;
+    display : flex ;
+    gap : 10px ;
+    justify-content: left;
+}
+.overflow{
+    overflow-y: scroll;
+}
+.songStyle{
+    display : flex ;
+    align-items: center;
+    justify-content: center;
+    padding : 10px 40px ;
+    height : 40px ;
+    background-color: white ;
+    color : black ;
+    border-radius: 10px ;
+    gap : 5px ;
+}
+.category:hover{
+    background-color: rgb(0, 0, 0) ;
+}
+/* CSS for song container ends here. */
+
+/* CSS for playbar starts here. */
+.song-player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height  : 100px ;
+    background-color: #000000;
+    border : none ;
+}
+#song-bar{
+    visibility: hidden;
+}
+.song-player-bar{
+    margin-bottom : 10px ;
+    display : flex ;
+    align-items: space evenly;
+    gap : 20px ;
+    background-color: transparent;
+}
+#songProgress{
+    width : 80vw ;
+}
+.song-player-icons{
+    display : flex ;
+    justify-content: space-evenly;
+    gap : 50px ;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color : rgb(255, 255, 255) ;
+}
+.song-player-icons span{
+    font-size: 1rem;
+    background-color: transparent;
+    width : 150px ;
+}
+.song-player-icons i{
+    background-color: transparent;
+    color : rgb(255, 255, 255) ;
+}
+#banner{
+    height : 400x ;
+    width : 400px ;
+    border-radius: 10px ;
+    /* border : 2px solid white; */
+}
+.song-container-right-bottom{
+    display : flex ;
+    align-items: center;
+    justify-content: center;
+    height : 100% ;
+    background-color: transparent;
+    border : none ;
+}
+.border{
+    border : 1px solid white ;
+}
+
+.property{
+    display : flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width : 50px ;
+    /* visibility: hidden; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#SongName{
+    display : flex ;
+    justify-content: right ;
+    width : 300px ;
+}
+#banner{
+    visibility: hidden;
+}
+#ul > li{
+    width : 100% ;
+    display: none;
+}
+#ul > li:hover{
+    opacity: 70%;
+    cursor : pointer;
+}
+/* CSS for playbar ends here. */
+
+@media (max-width:1242) {
+
+    .song-container-list ul li{
+        font-size: smaller;
+    }
+    
+}

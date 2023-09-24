@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe</title>
+    <link rel="stylesheet" href="/CSS/index1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-logo">
+        <a href="index1.html"><img src="/favicon-32x32.png" alt=""></a>
+      </div>
+      <div class="nav-utility">
+        <ul>
+          <li><a href="index1.html">Home</a></li>
+          <li><a href="index2.html">Playlist</a></li>
+          <li><a href="#">Podcast</a></li>
+        </ul>
+      </div>
+      <div class="nav-search">
+        <input type="text" id="search" placeholder="Search here" />
+        <button id="searchButton">Search</button>
+      </div>
+      <div class="nav-profile">
+        <ul class="">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="songs-container">
+      <div class="song-container-left">
+        <div class="songs-container-menu">
+          <ol id="ol">
+          </ol>
+        </div>
+        <div class="song-container-list" id="h">
+          <ul id="ul"></ul>
+        </div>
+      </div>
+      <div class="song-container-right border1">
+        <div class="song-conatiner-right-head border1">
+          <h1 id="title"></h1>
+        </div>
+        <div class="song-container-right-bottom border1" id="">
+          <img src="" alt="" id="banner"/>
+          <p id="bannerName"></p>
+        </div>
+      </div>
+    </div>
+    <div class="song-player" id="song-bar">
+      <div class="song-player-bar">
+        <div class="currentDuration property" style="background-color: black">
+          <span id="c-minutes" style="background-color: black"></span
+          ><span id="colon" style="background-color: black; color : white  " >:</span
+          ><span id="c-seconds" style="background-color: black"></span>
+        </div>
+        <input
+          type="range"
+          name="progressBar"
+          id="songProgress"
+          value="0"
+          min="0"
+          max="10000"
+        />
+        <div class="totalDuration property" style="background-color: black">
+          <span id="t-minutes" style="background-color: black"></span
+          ><span id="colon" style="background-color: black ; color : rgb(255, 255, 255)">:</span
+          ><span id="t-seconds" style="background-color: black"></span>
+        </div>
+      </div>
+      <div class="song-player-icons">
+        <span id="SongName"> Song Name</span>
+        <i
+          class="fa-solid fa-backward-step"
+          style="color: #ffffff"
+          id="backward"
+        ></i>
+        <i class="fa-solid fa-play" style="color: #ffffff" id="masterPlay"></i>
+        <!-- <i class="fa-solid fa-pause" style="color: #ffffff;" id="pause"></i> -->
+        <i
+          class="fa-solid fa-forward-step"
+          style="color: #ffffff"
+          id="forward"
+        ></i>
+        <span id="ArtistName">Artist Name</span>
+      </div>
+    </div>
+    <script src="/JAVASCRIPT/index1.js"></script>
+  </body>
+</html>

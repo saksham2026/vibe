@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100&family=Roboto+Mono:wght@300;400;600;700&display=swap');
+/* @import url(index1.css); */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color : rgb(255, 255, 255) ;
+    width : 100vw ;
+    /* height : 100vh ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.playlist{
+    display : flex ;
+    width : 100vw;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 3rem;
+}
+#createPlaylist{
+    height : 70px ;
+    width : 100vw ;
+    background-color: cyan;
+    opacity: 80%;
+    border : 1px solid white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : black ;
+    gap : 10px ;
+}
+i{
+    font-size: 2rem;
+    cursor : pointer;
+    background-color: rgb(28, 244, 244);
+}
+i:hover{
+    background-color: rgb(7, 213, 213);
+}
+.song-container-list ul{
+    margin-top : 50px ;
+    height: 100% ;
+    display : flex ;
+    flex-direction: column;
+    gap : 50px ;
+    align-items: center;
+    background-color: transparent;
+    padding : 20px ;
+    width : 70% ;
+    list-style: none;
+    margin-left : 50px ;
+}
+.song-container-list ul > li{
+    background-color: white;
+    color : black;
+    padding : 10px 40px ;
+    border-radius: 10px;
+    cursor: pointer;
+    width : 200px ;
+    display : flex ;
+    gap : 10px ;
+    justify-content: left;
+    align-items: center;
+}
+.song-container-list ul li img{
+    height : 40px ;
+    width : 40px ; 
+    border-radius: 30px;
+}
+.song-container-list ul li{
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+#credential{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-top: 50px ;
+    text-align: center;
+    height : 70vh;
+    width : 35vw ;
+    display: none;
+    overflow-y: scroll;
+    scroll-snap-type: none;
+}
+#credentialSubmit{
+    padding : 10px ;
+    border-radius: 10px ;
+    width : 150px ;
+}
+#playlistName{
+    font-size: 1.3rem;
+}
